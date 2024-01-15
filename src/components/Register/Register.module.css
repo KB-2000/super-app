@@ -1,0 +1,139 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    column-gap: 10vw;
+    height: 100vh;
+}
+.left {
+    position: relative;
+    height: 100vh;
+}
+.coverImage {
+    width: 50vw;
+    height: 100vh;
+}
+.bannerText {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    font-size: 3rem;
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 1.1px;
+   
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25rem;
+    margin-top: 5rem;   
+    height: 100vh;
+}
+.heading {
+    color: #72DB73;
+    font-family: Single Day;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%; /* 93.591px */
+}
+.subHeading{
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 139.688%; /* 34.922px */
+}
+.register {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+.check {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    gap: 0px;
+    padding: 0;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.register input {
+    border-radius: 3.816px;
+    background: #292929;
+    padding: 0.8rem;
+    margin: 0.3rem;
+    width: 25rem;
+    color: white;
+    font-family: DM Sans;
+}
+.check input[type="checkbox"] {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    background: #D9D9D9;
+  }
+  .check label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 30rem;
+    margin: 12px auto;
+    margin-left: 3.5rem;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #7C7C7C;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%; /* 27.984px */
+    letter-spacing: 0.401px;
+  }
+.right button {
+    border-radius: 28px;
+    background: #72DB73;
+    padding: 0.6rem;
+    margin-top: 2rem;
+    width: 26rem;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 108.688%; /* 31.519px */
+    letter-spacing: 0.58px;
+    border: none;
+    cursor: pointer;
+}
+.right p {
+    color: #7C7C7C;
+    font-family: Roboto;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 141.7%; /* 25.506px */
+    letter-spacing: 0.36px;
+    margin-top: 1rem;
+    width: 25rem;
+}
+.right span {
+    color: #72DB73;
+}
+.register p {
+    color: #F00;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%; /* 27.984px */
+    letter-spacing: 0.401px;
+    margin: 0;
+}
