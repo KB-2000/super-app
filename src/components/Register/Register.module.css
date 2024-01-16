@@ -1,17 +1,19 @@
+
 .main {
     display: flex;
     flex-direction: row;
     background-color: black;
     column-gap: 10vw;
-    height: 100vh;
+    max-height: 100vh;
+   
 }
 .left {
     position: relative;
-    height: 100vh;
+    max-height: 100vh;
 }
 .coverImage {
     width: 50vw;
-    height: 100vh;
+    max-height: 100vh;
 }
 .bannerText {
     position: absolute;
@@ -31,7 +33,7 @@
     align-items: center;
     max-width: 25rem;
     margin-top: 5rem;   
-    height: 100vh;
+    max-height: 100vh;
 }
 .heading {
     color: #72DB73;

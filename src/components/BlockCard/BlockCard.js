@@ -17,11 +17,16 @@ export default function BlockCard(props) {
         }
         
     }
+    useEffect(()=>{
+        const isExists = props.categoryList.includes(props.genreDetails.id) === true
+        setIsSelected(isExists); 
+        console.log(props.categoryList)
+    })
    
     return (
         <div
             onClick={() => {
-                setIsSelected(!isSelected);
+                 setIsSelected(!isSelected);
                  addValueToCategory(props.genreDetails.id);
             }}
             style={{

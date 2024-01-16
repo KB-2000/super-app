@@ -1,0 +1,26 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85vh;
+    width: 25vw;
+    color: white;
+    border-radius: 19px;
+}
+.container > h1 {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding-left: 1.3rem;
+}
+.news_detail > p{
+    height: 35vh;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    overflow: auto;
+    border-radius:0 19px 0 19px;
+}

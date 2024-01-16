@@ -43,6 +43,7 @@ export default function () {
         }
         setError(updateError);
         if(!Object.keys(updateError).length){
+            localStorage.setItem("formData",JSON.stringify(formData))
             navigate("/genre")   
         }
         
@@ -50,6 +51,7 @@ export default function () {
     }
     return (
         <>
+        
             <div className={styles.main}>
                 <div className={styles.left}>
                     <img className={styles.coverImage} src={coverImage} alt="CoverImage" />

@@ -5,7 +5,7 @@
     justify-content: space-around;
     min-height: 100vh;
     min-width: 100vw;
-    background-color: black;      
+    background-color: black;       
 }
 .left_container {
     display: flex;

@@ -1,0 +1,29 @@
+.container {
+    border-radius: 19px;
+    background: #F1C75B;
+    height: 62vh;
+    width: 20vw;
+    position: relative;
+}
+.container > h1 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105.688%; /* 40.161px */
+    letter-spacing: 0.76px;
+    padding: 1rem;
+}
+.container textarea {
+    background:transparent; 
+    border: none; 
+    outline: none;
+    width: 19vw;
+    resize: none;
+    position: absolute;
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+    color: rgb(47, 46, 46);
+    overflow: auto;
+}
