@@ -25,3 +25,20 @@
     border-radius:0 19px 0 19px;
     min-width: 23vw;
 }
+.browse {
+    border-radius: 34.777px;
+    background: #148A08;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 92.2%; /* 21.691px */
+    letter-spacing: 0.471px;
+    padding: 0.5rem 2rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+}

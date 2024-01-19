@@ -22,7 +22,6 @@ export default function Home() {
           <Timer />
         </div>
         <News />
-
       </div>
     </>
   )

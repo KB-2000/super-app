@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 import styles from './News.module.css'
 import coverImage from '../../assets/images/coverImage.png'
 import { getnewsDetails } from '../../apis/newsApi'
@@ -6,6 +7,7 @@ import loading from '../../assets/images/loading.gif'
 
 
 export default function News() {
+    const navigate = useNavigate();
     const [news,setNews] = useState();
     useEffect(()=>{
         fetchNews();
@@ -18,6 +20,7 @@ export default function News() {
     }
     return (
     <>
+    <div>
         <div 
           style={{background:`url(${coverImage})`}}
           className={styles.container}>
@@ -26,6 +29,10 @@ export default function News() {
                 <p>{news ? news.description : <img height={"100px"}src={loading} alt="" />}</p>
                 
             </div>
+            
+         
+        </div>
+        <button onClick={()=>navigate("/movies")} className={styles.browse}>Browse</button>
         </div>
         </>
     )
