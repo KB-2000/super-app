@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import styles from './News.module.css'
 import coverImage from '../../assets/images/coverImage.png'
 import { getnewsDetails } from '../../apis/newsApi'
+import loading from '../../assets/images/loading.gif'
 
 
 export default function News() {
-    const [news,setNews] = useState([]);
+    const [news,setNews] = useState({loading});
     useEffect(()=>{
         fetchNews();
     },[])
@@ -20,9 +21,10 @@ export default function News() {
         <div 
           style={{background:`url(${coverImage})`}}
           className={styles.container}>
-            <h1>{news ? news.title: ""}</h1>
+            <h1>{news ? news.title: <img height={"100px"}src={loading} alt="" />}</h1>
             <div className={styles.news_detail}>
-                <p>{news ? news.description : ""}</p>
+                <p>{news ? news.description : <img height={"100px"}src={loading} alt="" />}</p>
+                
             </div>
         </div>
         </>
