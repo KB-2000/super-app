@@ -8,9 +8,10 @@ export default function News() {
     const [news,setNews] = useState([]);
     useEffect(()=>{
         fetchNews();
-    },[])
+    })
     const fetchNews = async ()=>{
         const result = await getnewsDetails();
+        console.log("news detail "+result)
         setNews(result)
     }
     return (
