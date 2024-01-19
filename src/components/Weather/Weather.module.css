@@ -1,0 +1,57 @@
+
+.top {
+    border-radius: 33.428px 33.428px 0px 0px;
+    background: #FF4ADE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FFF;
+    font-family: Roboto;
+    font-size:1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 141.688%; 
+    letter-spacing: 1.101px;
+    padding: 0.5rem;
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139.688%; 
+    border-radius: 0 0 33.428px 33.428px;
+    background: #101744;
+    min-height: 15vh;
+    /* text-align: center; */
+}
+.pressure, .wind {
+    text-align: center;
+}
+.bottom div h1 {
+    padding: 1rem;
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    
+}
+.down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+ 
+}
+ 
+

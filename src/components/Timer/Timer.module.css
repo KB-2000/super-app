@@ -1,0 +1,78 @@
+.container {
+    border-radius: 19px;
+    background: #1E2343;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+}
+.right > button {
+    border-radius: 20px;
+    background: #FF6A6A;
+    /* padding: 0.5rem;  */
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.688%; /* 32.763px */
+    letter-spacing: 3px;
+}
+.right_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+}
+.right_container > div {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    color: white;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 105.688%; /* 52.844px */
+    /* letter-spacing: 2px; */
+}
+.right_container > p {
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 3rem;
+}
+.right_container > div > p:first-child{
+    color: #949494;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.688%; /* 27.479px */
+    letter-spacing: 1.04px;
+}
+.right_container div > span {
+    font-size: 2.3rem; 
+    margin: 0;
+    cursor: pointer;
+}
+.timer{
+    color: white;
+    font-family: Roboto;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

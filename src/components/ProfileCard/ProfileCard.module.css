@@ -9,7 +9,7 @@
 .container {
     border-radius: 19px;
     background: #5746EA;
-    min-width: 30vw;
+    min-width: 20vw;
     max-width: 40vw;
     height: 35vh;
     display: flex;
