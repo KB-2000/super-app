@@ -32,7 +32,7 @@
             <>
              <div className={styles.container}>
                 <div className={styles.top}>
-                    <span>{weather ? `${date}  ${time}`:<img height={"100px"}src={loading} alt="" />}</span>
+                    <span>{`${date}  ${time}`}</span>
                 </div>
                 {weather ? <div className={styles.bottom}>
                     <div className={styles.wind}>
