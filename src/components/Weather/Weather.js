@@ -34,7 +34,8 @@
 
 
         return (
-            <div className={styles.container}>
+            <>
+            {weather && <div className={styles.container}>
                 <div className={styles.top}>
                     <span>{weather.localtime ? weather.localtime:""}</span>
                 </div>
@@ -68,6 +69,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>}
+            </>
         )
     }

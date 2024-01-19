@@ -15,14 +15,15 @@ export default function News() {
         console.log("news detail "+result) 
         setNews(result)
     }
-    return (
-        <div 
+    return (<>
+       {news && <div 
           style={{background:`url(${coverImage})`}}
-         className={styles.container}>
+          className={styles.container}>
             <h1>{news.title ? news.title: ""}</h1>
             <div className={styles.news_detail}>
                 <p>{news.description ? news.description : ""}</p>
             </div>
-        </div>
+        </div>}
+        </>
     )
 }
