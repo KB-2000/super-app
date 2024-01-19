@@ -7,6 +7,6 @@ export const getWeatherDetails = async () => {
         console.log( response.data.location.localtime)
         return response;
     } catch (error) {
-        console.log("weather" + error)
+        console.log("weather : " + error)
     }
 }

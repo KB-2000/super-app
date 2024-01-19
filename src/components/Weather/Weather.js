@@ -16,20 +16,20 @@ export default function Weather() {
     }, [])
     const fetchWeather = async () => {
         try {
-            
+            const response = await getWeatherDetails();
+            setWeather({
+                localtime:response.data.location.localtime,
+                weatherStatus:response.data.current.condition.text,
+                pressure:response.data.current.pressure_mb,
+                temp:response.data.current.temp_c,
+                windSpeed:response.data.current.wind_kph,
+                humidity:response.data.current.humidity
+    
+            })
         } catch (error) {
-            
+            console.log(error)
         }
-        const response = await getWeatherDetails();
-        setWeather({
-            localtime:response.data.location.localtime,
-            weatherStatus:response.data.current.condition.text,
-            pressure:response.data.current.pressure_mb,
-            temp:response.data.current.temp_c,
-            windSpeed:response.data.current.wind_kph,
-            humidity:response.data.current.humidity
-
-        })
+       
     }
 
 
