@@ -2,9 +2,9 @@ import axios from 'axios'
 export const getnewsDetails = async () => {
     try {
         const ap=0;
-        const reqUrl = `https://newsapi.org/v2/everything?q=Apple&apiKey=a624f2b674c44e37b5b07aaba51f16a9`  
+        const reqUrl = `https://newsapi.org/v2/everything?q=Apple&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`  
         const response = await axios.get(reqUrl)
-        console.log(response.data.articles[1])
+        console.log(process.env.REACT_APP_NEWS_API_KEY)
         return response.data.articles[1]
         
     } catch (error) {

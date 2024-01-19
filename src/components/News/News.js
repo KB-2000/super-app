@@ -9,7 +9,7 @@ export default function News() {
     useEffect(()=>{
         fetchNews();
     },[])
-    
+
     const fetchNews = async ()=>{
         const result = await getnewsDetails();
         console.log("news detail "+result) 
@@ -19,9 +19,9 @@ export default function News() {
         <div 
           style={{background:`url(${coverImage})`}}
          className={styles.container}>
-            <h1>{news.title}</h1>
+            <h1>{news.title ? news.title: ""}</h1>
             <div className={styles.news_detail}>
-                <p>{news.description}</p>
+                <p>{news.description ? news.description : ""}</p>
             </div>
         </div>
     )
