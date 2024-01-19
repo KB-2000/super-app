@@ -4,14 +4,7 @@
     import loading from '../../assets/images/loading.gif'
 
     export default function Weather() {
-        const [weather,setWeather] = useState({
-            localtime:"",
-            weatherStatus:"",
-            pressure:"",
-            temp:"",
-            windSpeed:"",
-            humidity:""
-        })
+        const [weather,setWeather] = useState()
         useEffect(() => {
             fetchWeather();
         }, [])
@@ -28,7 +21,7 @@
         
                 })
             } catch (error) {
-                console.log(error)
+                console.log("weatehre "+ error)
             }
         
         }

@@ -6,7 +6,7 @@ import loading from '../../assets/images/loading.gif'
 
 
 export default function News() {
-    const [news,setNews] = useState({loading});
+    const [news,setNews] = useState();
     useEffect(()=>{
         fetchNews();
     },[])
