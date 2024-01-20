@@ -32,7 +32,7 @@ export default function News() {
             
          
         </div>
-        <button onClick={()=>navigate("/movies")} className={styles.browse}>Browse</button>
+        <button onClick={()=>navigate("/movie")} className={styles.browse}>Browse</button>
         </div>
         </>
     )

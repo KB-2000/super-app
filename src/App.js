@@ -13,7 +13,7 @@ function App() {
           <Route path="/genre" element={<Genre/>}/>
           <Route path="/home" element={<HomePage/>}/>
           <Route path="/movie" element={<MoviePage/>}/>
-          <Route path="/*" element={<h1>Invalid URL</h1>}/>
+          <Route path="*" element={<h1>Invalid URL</h1>}/>
         </Routes>
       </Router>
     </div>
