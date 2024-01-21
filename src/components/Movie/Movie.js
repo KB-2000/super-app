@@ -52,7 +52,7 @@ export default function () {
                         <h1>{genreItem}</h1>
                         <div className={{ textAlign: "center" }} key={genreIndex}>
 
-                            {movies ? <div className={styles.container}>
+                            {movies.length ? <div className={styles.container}>
                                 {genreMovies.map((movie, movieIndex) => (
                                     <div key={movieIndex}>
                                         <img height={"200px"} width={"300px"} src={movie.Poster} alt="" />
